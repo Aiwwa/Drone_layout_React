@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.d-none {
+  display: none;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.camera-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 20% 60% 20%;
+      grid-template-rows: 20% 60% 20%;
+  height: 100vh;
+  padding: 10px;
+}
+
+#myVidPlayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.219);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  height: 100%;
+  width: 100%;
+}
+
+.box-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -ms-grid-rows: 20% 40% 40%;
+      grid-template-rows: 20% 40% 40%;
+}
+
+.box-2 .fun-text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-2 .svg-box {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.box-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 10% 80% 10%;
+      grid-template-rows: 10% 80% 10%;
+}
+
+.box-4 .box-4-svg {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.box-5 {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  background-color: rgba(0, 0, 0, 0.591);
+}
+
+.box-5 .circle-nav {
+  z-index: 1;
+  opacity: 0.7;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.box-5 .circle-nav #menu {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box-5 .circle-nav .item .sector {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  fill: rgba(255, 255, 255, 0.8);
+  stroke: #ddd;
+}
+
+.box-5 .circle-nav .item:hover .sector {
+  fill: #333;
+}
+
+.box-5 .circle-nav .menu-trigger {
+  fill: #363636;
+  pointer-events: auto;
+}
+
+.box-5 .circle-nav .menu-trigger:hover {
+  cursor: pointer;
+}
+
+.box-5 .circle-nav .item use {
+  fill: #333;
+}
+
+.box-5 .circle-nav .item:hover use {
+  fill: #fff;
+}
+
+.box-5 svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.box-6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  -ms-grid-rows: 10% 80% 10%;
+      grid-template-rows: 10% 80% 10%;
+}
+
+.box-6 .box-6-svg {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.box-8 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 60% 20% 10%;
+      grid-template-rows: 60% 20% 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-8 .data-wrap {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.box-8 .data-wrap .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.box-8 .data-wrap .data .singel__data_div {
+  position: relative;
+  background-color: rgba(114, 114, 108, 0.329);
+  color: white;
+  margin: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-weight: 300;
+  border-radius: 10px;
+  border: 1px solid #6c6c6b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 80px;
+  text-transform: uppercase;
+}
+
+.box-8 .data-wrap .data .singel__data_div .data_result {
+  margin-top: 5px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px dotted #5c5c5c;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
+.box-8 .data-wrap .data .singel__data_div img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.box-8 .circle-down-menu {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.box-8 .circle-down-menu .cir {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.568);
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+}
+
+.box-8 .circle-down-menu .cir:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.box-8 .box-8-svg {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+/*# sourceMappingURL=style.css.map */
